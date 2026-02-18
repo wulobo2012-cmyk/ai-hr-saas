@@ -99,7 +99,7 @@ function MainApp({ session }) {
     setResult('正在连接大脑进行分析，请稍候...')
 
     try {
-      const response = await fetch('http://localhost:3000/api/analyze', {
+      const response = await fetch('https://ai-hr-backend-witv.onrender.com/api/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ doc, type }),
